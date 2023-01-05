@@ -9,19 +9,13 @@
   <main>
     <body>
       <h1 id="title">freeCodeCamp Survey Form</h1>
-      <p id="description">Thank you for taking the time to help us improve the platform</p>
+      <p id="description"><em>Thank you for taking the time to help us improve the platform</em></p>
       <form id="survey-form" class="formbox">
-
-
       <fieldset>
         <label id="name-label" for="name">Name<input id="name" type="text" placeholder="Enter your name" required></label>
-
         <label id="email-label" for="email">Email<input id="email" type="email" placeholder="Enter your Email" required></label>
-
         <label id="number-label" for="number">Age (optional)<input id="number" type="number" placeholder="Age" min="13" max="120"></label>
       </fieldset>
-
-
       <fieldset>
         <label>Which option best describes your current role?
           <select>
@@ -33,11 +27,14 @@
             <option value="5">Other</option>
           </select>
         </label>
+        <fieldset>
         <label>Would you recommend freeCodeCamp to a friend?
           <input name="recommendation" value="1" type="radio">Definitely</input>
           <input name="recommendation" value="2" type="radio">Maybe</input>
           <input name="recommendation" value="3" type="radio">Not sure</input>
         </label>
+        </fieldset>
+        <fieldset>
         <label>What is your favorite feature of freeCodeCamp?
           <select id="dropdown">
             <option value="">Select an option</option>
@@ -62,10 +59,10 @@
           <input value="10" type="checkbox">Forum</input>
           <input value="11" type="checkbox">Additional Courses</input>
         </label>
+        </fieldset>
         <label>Any comments or suggestions?
         <textarea placeholder="Enter your comment here..."></textarea>
         </label>
-      </fieldset>
       <input id="submit" type="submit">
       </form>
     </body>
