@@ -51,8 +51,8 @@ body {
   }
 
   .inline {
-    display: unset;
-    margin: 0 5em 0 0;
+    width: unset;
+    margin: 0 1em 0 0;
     vertical-align: middle;
   }
   
