@@ -6,11 +6,10 @@
     <title>freeCodeCamp Survey Form</title>
     <link href="styles.css" rel="stylesheet"/>
   </head>
-  <main>
     <body>
       <h1 id="title">freeCodeCamp Survey Form</h1>
-      <p id="description"><em>Thank you for taking the time to help us improve the platform</em></p>
-      <form id="survey-form" class="formbox">
+      <p id="description"><em><strong>Thank you for taking the time to help us improve the platform</em></strong></p>
+      <form id="survey-form">
       <fieldset>
         <label id="name-label" for="name">Name<input id="name" type="text" placeholder="Enter your name" required></label>
         <label id="email-label" for="email">Email<input id="email" type="email" placeholder="Enter your Email" required></label>
@@ -28,8 +27,8 @@
           </select>
         </label>
         <fieldset>
-        <label>Would you recommend freeCodeCamp to a friend?
-          <input name="recommendation" value="1" type="radio">Definitely</input>
+        <label for="recommendation">Would you recommend freeCodeCamp to a friend?
+          <input name="recommendation" value="1" type="radio" class="inline" /> Definitely</input>
           <input name="recommendation" value="2" type="radio">Maybe</input>
           <input name="recommendation" value="3" type="radio">Not sure</input>
         </label>
@@ -60,11 +59,12 @@
           <input value="11" type="checkbox">Additional Courses</input>
         </label>
         </fieldset>
-        <label>Any comments or suggestions?
-        <textarea placeholder="Enter your comment here..."></textarea>
+        <label for="feedback">Any comments or suggestions?
+        <textarea id="feedback" name="feedback" rows="5" cols="30" placeholder="Enter your comment here..."></textarea>
         </label>
-      <input id="submit" type="submit">
+      <input id="submit" type="submit"/>
       </form>
+      <br>
+      <p><a href="https://github.com/Zacharyjpeter/FCC-SurveyForm">View the HTML/CSS on GitHub</a></p>
     </body>
-  </main>
 </html>
